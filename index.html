@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- =====BOX ICONS===== -->
@@ -19,7 +20,7 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav__logo">Portfolio</a>
+                <a href="#home" class="nav__logo">Portfolio</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
@@ -29,6 +30,17 @@
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <div class="dropdown">
+                            <div class="icon__globe"><i class='bx bx-globe'></i></div>
+                            <div class="dropdown-options">
+                                <a href="#home">EN</a>
+                                <a href="#contact">JP</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div>
+                    </div>
                 </ul>
             </div>
 
@@ -95,112 +107,215 @@
             </div>
         </section>
 
+        <!--===== Experience =====-->
+        <div class="bd-grid">
+            <section class="timeline">
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                    </div>
+                    <h3 class="h3">Experience</h3>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Application Engineer <span class='duration'>(May 2022 ~
+                                Present)</span> </h4>
+                        <span>IBJ Inc, Tokyo, Japan (Onsite)</span>
+
+                        <p class="timeline-text">
+                            Tech Stack:
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Application Engineer Intern <span class='duration'>(Aug
+                                2021
+                                ~ Apr 2022)</span> </h4>
+                        <span>IBJ Inc, Tokyo, Japan (Remote)</span>
+                        <p class="timeline-text">
+                            Completed crash courses on Japanese N5 & N4 levels.</br>
+                            Awarded 'Best in Class behaviour' for my active participation and performance.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Software Engineer Intern <span class='duration'>(May
+                                2021
+                                ~ Jul 2022)</span></h4>
+                        <span>PlanetSpark, Gurugram, India (Remote)</span>
+                        <p class="timeline-text">
+                            CGPA: 9.0/10</br>
+                            Served as a member of Rotaract-Club.</br>
+                            Secured 2nd position in the Inter-department coding competition.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Project Trainee <span class='duration'>(Jan
+                                2020
+                                ~ Jun 2020)</span></h4>
+                        <span>ITC Infotech, Bengaluru, India (Hybrid)</span>
+                        <p class="timeline-text">
+                            Percentage: 92%
+                        </p>
+                    </li>
+
+                </ol>
+            </section>
+            <section class="timeline">
+                <div class="title-wrapper">
+                    <div class="icon-box">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                    </div>
+                    <h3 class="h3">Education</h3>
+                </div>
+                <ol class="timeline-list">
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">Nihongo Gurukula, Bengaluru, India</h4>
+                        <span>2020-08 ~ 2020-11</span>
+                        <p class="timeline-text">
+                            Completed crash courses on Japanese N5 & N4 levels.</br>
+                            Awarded 'Best in Class behaviour' for my active participation and performance.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">New Horizon College of Engineering (Computer Science and
+                            Engineering), Bengaluru, India</h4>
+                        <span> 2016 ~ 2020</span>
+                        <p class="timeline-text">
+                            CGPA: 9.0/10</br>
+                            Served as a member of Rotaract-Club.</br>
+                            Secured 2nd position in the Inter-department coding competition.
+                        </p>
+                    </li>
+
+                    <li class="timeline-item">
+                        <h4 class="h4 timeline-item-title">12th(PCMB), Udupi, India</h4>
+                        <span>2014 ~ 2016</span>
+                        <p class="timeline-text">
+                            Percentage: 92%
+                        </p>
+                    </li>
+
+                </ol>
+            </section>
+        </div>
+
         <!--===== SKILLS =====-->
         <section class="skills section" id="skills">
             <h2 class="section-title">Skills</h2>
 
-            <div class="skills__container bd-grid">
+            <div class="skills__container bd-grid-skills">
                 <div>
                     <h2 class="skills__subtitle">Profesional Skills</h2>
                     <p class="skills__text">I possess extensive expertise across diverse technologies, including mobile
                         app development for iOS and Android, proficiency in cross-platform frameworks like Flutter.<br>
                         Here are some of my skills...</p>
+                    <div class="row">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__bar skills__html">
 
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-html5 skills__icon'></i>
-                            <span class="skills__name">HTML</span>
-                        </div>
-                        <div class="skills__bar skills__html">
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
 
                         </div>
-                        <div>
-                            <span class="skills__percentage">95%</span>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-css3 skills__icon'></i>
-                            <span class="skills__name">CSS3</span>
-                        </div>
-                        <div class="skills__bar skills__css">
+                    <div class="row">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon'></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-javascript skills__icon'></i>
-                            <span class="skills__name">JAVASCRIPT</span>
-                        </div>
-                        <div class="skills__bar skills__js">
+                    <div class="row">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <box-icon type='logo' name='flutter'></box-icon>
+                                <i class='bx bxl-flutter skills__icon'></i>
+                                <span class="skills__name">Flutter</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">65%</span>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code-alt skills__icon'></i>
+                                <span class="skills__name">Ruby on Rails</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxs-paint skills__icon'></i>
-                            <span class="skills__name">UX/UI</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
+                    <div class="row">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-java skills__icon'></i>
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
 
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <box-icon type='logo' name='flutter'></box-icon>
-                            <i class='bx bxl-flutter skills__icon'></i>
-                            <span class="skills__name">Flutter</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
 
-                        </div>
-                        <div>
-                            <span class="skills__percentage">75%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bx-code-alt skills__icon'></i>
-                            <span class="skills__name">Ruby on Rails</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-java skills__icon'></i>
-                            <span class="skills__name">Java</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
-                        </div>
-                    </div>
-                    <div class="skills__data">
-                        <div class="skills__names">
-                            <i class='bx bxl-python skills__icon'></i>
-                            <span class="skills__name">Python</span>
-                        </div>
-                        <div class="skills__bar skills__ux">
-
-                        </div>
-                        <div>
-                            <span class="skills__percentage">85%</span>
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
                         </div>
                     </div>
                     <div class="skills__data">
@@ -245,14 +360,13 @@
         <!--===== CONTACT =====-->
         <section class="contact section" id="contact">
             <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid-contact">
+                <a href="https://www.facebook.com/deekshithdv563/" class="footer__icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/deekshithdv98/" class="footer__icon"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/deekshithdv" class="footer__icon"><i class='bx bxl-github'></i></a>
 
-            <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
-                </form>
             </div>
         </section>
     </main>
@@ -260,11 +374,6 @@
     <!--===== FOOTER =====-->
     <footer class="footer">
         <p class="footer__title">Portfolio | Deekshith</p>
-        <div class="footer__social">
-            <a href="https://www.facebook.com/deekshithdv563/" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/deekshithdv98/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="https://github.com/deekshithdv" class="footer__icon"><i class='bx bxl-github'></i></a>
-        </div>
         <p class="footer__copy">&#169; Deekshith. All rigths are not reserved!</p>
     </footer>
 
