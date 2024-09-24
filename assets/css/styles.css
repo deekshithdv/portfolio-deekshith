@@ -11,6 +11,8 @@
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --vegas-blue: hsl(212, 74%, 58%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -111,6 +113,18 @@ img {
   margin-right: var(--mb-2);
 }
 
+.bd-grid-skills {
+  max-width: 1024px;
+  display: flex;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+.bd-grid-contact {
+  max-width: 1024px;
+  align-self: center;
+}
+
 .l-header {
   width: 100%;
   position: fixed;
@@ -118,7 +132,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  box-shadow: 0 1px 4px rgba(195, 222, 249, 0.15);
 }
 
 /*===== NAV =====*/
@@ -167,6 +181,10 @@ img {
 }
 
 .nav__logo {
+  color: var(--second-color);
+}
+
+.nav__lang {
   color: var(--second-color);
 }
 
@@ -277,6 +295,108 @@ img {
   border-radius: 0.5rem;
 }
 
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+.icon-box {
+  position: relative;
+  background: var(--vegas-gold);
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--vegas-gold);
+  box-shadow: var(--vegas-gold);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box ion-icon {
+  --ionicon-stroke-width: 35px;
+}
+
+/*-----------------------------------*\
+#RESUME
+\*-----------------------------------*/
+.timeline {
+  margin-bottom: 30px;
+}
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timeline-item-title {
+  line-height: 1.3;
+  margin-bottom: 0px;
+  color: var(--second-color);
+}
+
+.timeline-list span {
+  color: var(--vegas-gold);
+  line-height: 1.6;
+  font-size: small;
+}
+
+.timeline-list .duration {
+  margin-left: 5px;
+  color: var(--vegas-gold);
+  line-height: 1.6;
+  font-size: small;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--vegas-gold);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--first-color);
+}
+
+.timeline-text {
+  color: var(--second-color);
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
@@ -291,8 +411,14 @@ img {
   margin-bottom: var(--mb-4);
 }
 
+.row {
+  display: flex;
+  gap: 2rem;
+}
+
 .skills__data {
   display: flex;
+  width: 50%;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -383,7 +509,38 @@ img {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  
+}
+
+/* ===== LANGUAGE =====*/
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown i {
+  color: #fff;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 
@@ -407,7 +564,7 @@ img {
 
 .footer__icon {
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
   margin: 0 var(--mb-2);
 }
 
@@ -427,6 +584,10 @@ img {
 }
 
 @media screen and (min-width: 576px) {
+  .dropdown i {
+    color: #000;
+  }
+
   .home {
     padding: 4rem 0 2rem;
   }
@@ -473,6 +634,7 @@ img {
 
   .contact__container {
     justify-items: center;
+
   }
 }
 
@@ -549,6 +711,11 @@ img {
 
 @media screen and (min-width: 992px) {
   .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bd-grid-skills {
     margin-left: auto;
     margin-right: auto;
   }
