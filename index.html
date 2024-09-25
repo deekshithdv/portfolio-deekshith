@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/styles2.css">
+    <link rel="stylesheet" href="assets/css/dialog_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!-- =====BOX ICONS===== -->
@@ -29,7 +29,7 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#blogs" class="nav__link">Blogs</a></li>
                     <li class="nav__item">
                         <div class="dropdown">
                             <div class="icon__globe"><i class='bx bx-globe'></i></div>
@@ -57,7 +57,7 @@
                 <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Deekshith</span><br> App Developer
                 </h1>
 
-                <a href="#contact" class="button">Contact</a>
+                <a href="#footer" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -123,7 +123,9 @@
                         <span>IBJ Inc, Tokyo, Japan (Onsite)</span>
 
                         <p class="timeline-text">
-                            Tech Stack:
+                            Tech stack: Flutter, Ruby on Rails, Java, PostgreSQL, Firebase, OpenAPI, Xcode, Android
+                            Studio, Ruby Sequel, Git, Backlog, Cacoo, Postman
+
                         </p>
                     </li>
 
@@ -133,8 +135,7 @@
                                 ~ Apr 2022)</span> </h4>
                         <span>IBJ Inc, Tokyo, Japan (Remote)</span>
                         <p class="timeline-text">
-                            Completed crash courses on Japanese N5 & N4 levels.</br>
-                            Awarded 'Best in Class behaviour' for my active participation and performance.
+                            Tech stack: Ruby on rails, PostgreSQL, Ruby Sequel, Postman, Git.
                         </p>
                     </li>
 
@@ -144,9 +145,7 @@
                                 ~ Jul 2022)</span></h4>
                         <span>PlanetSpark, Gurugram, India (Remote)</span>
                         <p class="timeline-text">
-                            CGPA: 9.0/10</br>
-                            Served as a member of Rotaract-Club.</br>
-                            Secured 2nd position in the Inter-department coding competition.
+                            Tech stack: Ruby on rails, Sentry, Git, Postman.
                         </p>
                     </li>
 
@@ -156,7 +155,7 @@
                                 ~ Jun 2020)</span></h4>
                         <span>ITC Infotech, Bengaluru, India (Hybrid)</span>
                         <p class="timeline-text">
-                            Percentage: 92%
+                            Tech stack: Python, Machine learning.
                         </p>
                     </li>
 
@@ -341,7 +340,22 @@
         <!--===== WORK =====-->
         <section class="work section" id="work">
             <h2 class="section-title">Work</h2>
-
+            <h3 class="h3 bd-grid">Projects/Apps that I have worked on!</h3>
+            <div class="work__container bd-grid">
+                <a class="work__img show" target="_blank">
+                    <img src="assets/img/projects/gohandate.webp" alt="">
+                </a>
+                <a class="work__img show2" target="_blank">
+                    <img src="assets/img/projects/bridalnet.jpg" alt="">
+                </a>
+                <a class="work__img show3" target="_blank">
+                    <img src="assets/img/projects/IBJS.jpg" alt="">
+                </a>
+                <a class="work__img show4" target="_blank">
+                    <img src="assets/img/projects/KKRBN.png" alt="">
+                </a>
+            </div>
+            <h3 class="h3 bd-grid">Personal</h3>
             <div class="work__container bd-grid">
                 <a href="https://github.com/deekshithdv/NewsApp" class="work__img" target="_blank">
                     <img src="assets/img/newsapp.jpeg" alt="">
@@ -353,27 +367,31 @@
                 <a href="https://github.com/deekshithdv/packpoint" class="work__img" target="_blank">
                     <img src="assets/img/packpoint.jpg" alt="">
                 </a>
-
             </div>
+
         </section>
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
+        <!--===== Blogs =====-->
+        <section class="contact section" id="blogs">
+            <h2 class="section-title">Blogs</h2>
             <div class="contact__container bd-grid-contact">
-                <a href="https://www.facebook.com/deekshithdv563/" class="footer__icon"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/deekshithdv98/" class="footer__icon"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://github.com/deekshithdv" class="footer__icon"><i class='bx bxl-github'></i></a>
-
             </div>
         </section>
+        <dialog id="dialog">
+            Content here
+            <button class="close">close</button>
+        </dialog>
     </main>
 
     <!--===== FOOTER =====-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <p class="footer__title">Portfolio | Deekshith</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/deekshith-dv/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.facebook.com/deekshithdv563/" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/deekshithdv98/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/deekshithdv" class="footer__icon"><i class='bx bxl-github'></i></a>
+        </div>
         <p class="footer__copy">&#169; Deekshith. All rigths are not reserved!</p>
     </footer>
 
@@ -383,6 +401,7 @@
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
